@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link{
+    font-family:'initial' , 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+header{
+    background-image: url(../imag/background.webp);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    margin-top: 150px !important;
+    margin-left: 100px !important;
+}
+.text{
+    background-color: #458f9c7c;
+}
+.products{
+    background-color: rgb(2, 48, 70, 100);
+    position: relative;
+}
+.pro{
+    overflow-x: auto;
+}
+.pro::-webkit-scrollbar{
+    height: 0;
+}
+.product-card{
+    background-color: rgb(0, 110, 161, 100);
+    color: white;
+    border-radius: 20px;
+}
+.btn{
+    background-color: rgb(2, 48, 70, 100);
+}
+
+.test{
+    padding: 40px;
+    background-color: rgb(0, 110, 161, 100);
+}
+/* Testimonial Section Styles */
+.testimonial-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+.testimonial {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+}
+.testimonial.active {
+    display: flex;
+}
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+.testimonial p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #555;
+}
+
+.testimonial h4 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #333;
+}
+
+  /* Navigation Buttons */
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.nav-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+.nav-buttons button:hover {
+    background-color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+input{
+    display: block;
+    margin-bottom: 10px;
+    min-width: 100%;
+    min-height: 50px;
+    padding-left: 30px;
+    border-radius: 20px;
+}
+footer{
+    background-color: rgb(112, 174, 212, 100);
+    min-height: 90vh;
+}
+form{
+    background-color: rgb(212, 227, 234, 100);
+}
+
+.naav{
+    background-color: rgb(145, 180, 191, 100);
+}
+
+.card{
+    min-width: 300px;
+}
+
+.right,.left{
+    position: absolute;
+    top: 50%;
+}
+
+.right{
+    left: 20px;
+}
+.left{
+    right:20px
+}
